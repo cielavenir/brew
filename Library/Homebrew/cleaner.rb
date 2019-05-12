@@ -113,7 +113,7 @@ class Cleaner
           old_perms = path.stat.mode & 0777
           puts "Fixing #{path} permissions from #{old_perms.to_s(8)} to #{perms.to_s(8)}" if perms != old_perms
         end
-        path.chmod perms
+        #path.chmod perms
       end
     end
   end
