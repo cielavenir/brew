@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/local/bin/bash
 set +o posix
 
 # Fail fast with concise message when cwd does not exist

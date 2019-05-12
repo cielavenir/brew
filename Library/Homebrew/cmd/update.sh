@@ -560,7 +560,7 @@ EOS
       export HOMEBREW_UPDATE_BEFORE"$TAP_VAR"="$CURRENT_REVISION"
       export HOMEBREW_UPDATE_AFTER"$TAP_VAR"="$CURRENT_REVISION"
     else
-      merge_or_rebase "$DIR" "$TAP_VAR" "$UPSTREAM_BRANCH"
+      #merge_or_rebase "$DIR" "$TAP_VAR" "$UPSTREAM_BRANCH"
       [[ -n "$HOMEBREW_VERBOSE" ]] && echo
     fi
   done

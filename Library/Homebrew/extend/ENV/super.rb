@@ -109,7 +109,7 @@ module Superenv
     # Formula dependencies can override standard tools.
     path.append(deps.map(&:opt_bin))
     path.append(homebrew_extra_paths)
-    path.append("/usr/bin", "/bin", "/usr/sbin", "/sbin")
+    path.append("/usr/bin", "/bin", "/usr/sbin", "/sbin", "/usr/local/bin")
 
     begin
       path.append(gcc_version_formula($&).opt_bin) if homebrew_cc =~ GNU_GCC_REGEXP

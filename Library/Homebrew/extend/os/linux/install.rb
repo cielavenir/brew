@@ -12,6 +12,7 @@ module Homebrew
       "/lib/ld-linux-armhf.so.3",
       "/system/bin/linker64",
       "/system/bin/linker",
+      "/libexec/ld-elf.so.1",
     ].freeze
 
     def symlink_ld_so

@@ -6,6 +6,7 @@ module OS
       module_function
 
       def system_version
+        @system_version = "9"
         return @system_version if @system_version
 
         version = Utils.popen_read("/usr/bin/ldd", "--version")[/ (\d+\.\d+)/, 1]

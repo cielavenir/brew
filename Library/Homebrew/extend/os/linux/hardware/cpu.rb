@@ -18,13 +18,13 @@ module Hardware
       end
 
       def cpuinfo
-        @cpuinfo ||= File.read("/proc/cpuinfo")
+        @cpuinfo ||= "" # File.read("/proc/cpuinfo")
       end
 
       def family
         return :arm if arm?
         return :ppc if ppc?
-        return :dunno unless intel?
+        return :dunno # unless intel?
 
         # See https://software.intel.com/en-us/articles/intel-architecture-and-processor-identification-with-cpuid-model-and-family-numbers
         # and https://github.com/llvm-mirror/llvm/blob/master/lib/Support/Host.cpp

@@ -10,7 +10,7 @@ module OS
   def self.linux?
     return false if ENV["HOMEBREW_TEST_GENERIC_OS"]
 
-    RbConfig::CONFIG["host_os"].include? "linux"
+    true # RbConfig::CONFIG["host_os"].include? "linux"
   end
 
   ::OS_VERSION = ENV["HOMEBREW_OS_VERSION"]
